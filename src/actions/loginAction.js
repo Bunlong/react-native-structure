@@ -2,10 +2,6 @@ import * as actionTypes from '../actionTypes'
 import {getLogin} from '../reducers/rootReducer'
 import {Actions} from 'react-native-router-flux'
 
-import {
-  Alert,
-} from 'react-native'
-
 export const login = () => {
   Actions.profile()
   return {type: actionTypes.ON_LOGGIN}
