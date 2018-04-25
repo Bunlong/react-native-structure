@@ -6,7 +6,6 @@ import {
   Alert,
 } from 'react-native'
 
-// action creators
 export const login = () => {
   Actions.profile()
   return {type: actionTypes.ON_LOGGIN}

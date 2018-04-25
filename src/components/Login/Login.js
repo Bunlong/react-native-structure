@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import {
+  StyleSheet,
   Text,
   View,
   Button,
-  Alert,
 } from 'react-native'
 
 export default class Login extends Component {
@@ -11,7 +11,7 @@ export default class Login extends Component {
     console.log(this.props)
     return (
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <Text>
+        <Text style={styles.messages}>
           The current scene is titled {this.props.title}
         </Text>
         <Button 
@@ -23,3 +23,9 @@ export default class Login extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  messages: {
+    marginBottom: 20,
+  },
+})
